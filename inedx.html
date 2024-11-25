@@ -3,22 +3,29 @@
 <html>
 <head>
     <title>Gestion RH</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Bienvenue dans le système de gestion RH</h1>
+    <div class="container">
     <button onclick="afficherEmployes()">Afficher la liste des employés</button>
     <div id="liste-employes"></div>
 
     <!-- Section pour ajouter un employé -->
+     <div>
     <h3>Ajouter un employé</h3>
     <input type="text" id="ajout-nom" placeholder="Nom">
     <input type="text" id="ajout-poste" placeholder="Poste">
     <button onclick="ajouterEmployeManuel()">Ajouter</button>
+</div>
 
     <!-- Section pour supprimer un employé -->
+     <div>
     <h3>Supprimer un employé</h3>
     <input type="number" id="supprimer-id" placeholder="ID">
     <button onclick="supprimerEmployeManuel()">Supprimer</button>
+</div>
+</div>
 
     <script src="app.js"></script>
 </body>
